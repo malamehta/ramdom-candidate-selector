@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Selector</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="left-content-wrapper">
+            <div class="left-content">
+                <div class="left-inner-content">
+                    <div class="num" id="number">0
+                        <!-- <div class="spinner">
+                            <img src="images/spinner (2).png"class="spinning" width="200px" alt="" style="margin-bottom:-50px;">
+                        </div> -->
+                    </div>
+                    <h4 class="title">Selected Candidate</h4>
+                    <p class="selected-name" id="selectedName">Candidate Name </p>
+                    <button class="start-btn" onclick="random();">Start Search</button>
+
+                </div>
+                <div class="indicators">
+                    <div class="not-selected indicator">
+                        <div class="color white-color"></div>
+                        <span>Not Selected</span>
+                    </div>
+                    <div class="selected indicator">
+                        <div class="color red-color"></div>
+                        <span>Selected</span>
+                    </div>
+                    <div class="current indicator">
+                        <div class="color blue-color"></div>
+                        <span>Current Selection</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="add-field">
+                <input type="text" placeholder="eg : username" id="txt" value="">
+                <button class="add-btn" id="addBtn" type="submit" onclick="addName()">Add</button>
+            </div>
+            <div class="name-field" id="scroll-area">
+                <div id="currentselected-content"></div>
+                <div id="notselected-content"></div>
+                <div id="selected-content"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

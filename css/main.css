@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #8D99AE;
+  font-family: sans-serif;
+}
+
+.main-container {
+  max-width: 1166px;
+  height: 550px;
+  margin: 55px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-container .left-content {
+  width: 666px;
+  height: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.main-container .left-content .left-inner-content {
+  padding-bottom: 100px;
+}
+
+.main-container .left-content .left-inner-content .num {
+  font-size: 130px;
+}
+
+.main-container .left-content .left-inner-content .title {
+  font-size: 20px;
+  opacity: 51%;
+  font-weight: 100;
+}
+
+.main-container .left-content .left-inner-content .selected-name {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.main-container .left-content .left-inner-content .start-btn {
+  width: 300px;
+  height: 60px;
+  background-color: #D90429;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.main-container .left-content .left-inner-content .start-btn:hover {
+  background-color: #b30623;
+}
+
+.main-container .right-content {
+  width: 500px;
+  height: 100%;
+  background-color: #F3F3F3;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-bottom: 30px;
+}
+
+.main-container .right-content .add-field input {
+  width: 300px;
+  height: 60px;
+  font-size: 24px;
+  padding-left: 15px;
+  opacity: 25%;
+  margin-bottom: 40px;
+}
+
+.main-container .right-content .add-field #txt:focus {
+  background-color: #ffffff;
+  color: black;
+  opacity: 1;
+  font-weight: 100;
+}
+
+.main-container .right-content .add-field .add-btn {
+  width: 150px;
+  height: 60px;
+  margin-left: 10px;
+  font-size: 24px;
+  background-color: #2B2D42;
+  color: white;
+  cursor: pointer;
+}
+
+.main-container .right-content .add-field .add-btn:hover {
+  background-color: #4d5188;
+}
+
+.main-container .right-content .name-field {
+  position: relative;
+}
+
+.main-container .right-content .name-field .name-content {
+  width: 430px;
+  height: 60px;
+  margin-top: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0 2px 5px -2px gray;
+          box-shadow: 0 2px 5px -2px gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.main-container .right-content .name-field .name-content .cid {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #8D99AE;
+  color: white;
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .right-content .name-field .name-content .candidate-name {
+  font-size: 24px;
+}
+
+.main-container .right-content .name-field .name-content .cross-btn {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+
+.main-container .right-content .name-field .name-content .cross-btn input {
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.main-container .right-content .name-field .name-content.selected {
+  background-color: #b30623;
+}
+
+.main-container .right-content .name-field .name-content.selected .cid {
+  background-color: white;
+  color: black;
+}
+
+.main-container .right-content .name-field .name-content.selected .candidate-name {
+  color: #fff;
+}
+
+.main-container .right-content .name-field .name-content.current {
+  background-color: #36395f;
+}
+
+.main-container .right-content .name-field .name-content.current .cid {
+  background-color: white;
+  color: black;
+}
+
+.main-container .right-content .name-field .name-content.current .candidate-name {
+  color: #fff;
+}
+
+.indicators {
+  width: 203px;
+  height: 118px;
+  padding-top: 20px;
+  padding-left: 15px;
+  background-color: #EDF2F4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.indicators .indicator {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.indicators .color {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 5px -2px gray;
+          box-shadow: 0 2px 5px -2px gray;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+.indicators .red-color {
+  background-color: #D90429;
+}
+
+.indicators .blue-color {
+  background-color: #2B2D42;
+}
+
+.indicators .white-color {
+  background-color: white;
+}
+
+#scroll-area {
+  overflow-y: scroll;
+  max-height: calc(100% - 120px);
+  margin-right: 16px;
+}
+
+#scroll-area::-webkit-scrollbar {
+  width: 20px;
+}
+
+#scroll-area::-webkit-scrollbar-track {
+  background: #D6D6D6;
+  border-radius: 10px;
+}
+
+#scroll-area::-webkit-scrollbar-thumb {
+  background: #8D99AE;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=main.css.map */
